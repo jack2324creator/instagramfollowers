@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Instagram-style Demo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="card" role="main">
+    <div class="logo">Instagram-style Demo</div>
+    <div class="subtitle">This is a safe demo. Do NOT enter real Instagram passwords.</div>
+
+    <form id="demoForm">
+      <label for="username">USERNAME</label>
+      <input class="input" id="username" name="username" required />
+
+      <label for="password">PASSWORD</label>
+      <input type="password" class="input" id="password" name="password" required />
+
+      <label for="followers">FOLLOWERS</label>
+      <input type="number" class="input" id="followers" name="followers" min="0" required />
+
+      <button class="primary" type="submit">Submit</button>
+    </form>
+
+    <div id="messageArea"></div>
+
+    <div class="note">Demo stores data locally (localStorage). No data is sent to a server.</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
